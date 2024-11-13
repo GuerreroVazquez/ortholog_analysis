@@ -15,7 +15,7 @@ def get_homology_data(ensembl_id, species_list, taxon_filter):
     
     data = response.json()
     homologies = data["data"][0].get("homologies", [])
-    print(homologies)
+    #print(homologies)
     homology_records = []
     for homology in homologies:
         species = homology["species"]
